@@ -3,7 +3,7 @@
 
 bool compare(int c, int m)
 {
-    return abs(c-m) > 150;
+    return abs(c-m) > 500;
 }
 
 MainWindow::MainWindow(QWidget *parent)
@@ -212,7 +212,7 @@ MainWindow::MainWindow(QWidget *parent)
                     compare(this->tacSensor_.calibratedStates_.impedence_[8],this->tacSensor_.sensorStates_.impedence_[8]) &&
                     compare(this->tacSensor_.calibratedStates_.impedence_[9],this->tacSensor_.sensorStates_.impedence_[9]))
             {
-                this->ui->touchPoint_1->setStyleSheet("QLabel { background-color : blue }");
+                this->ui->touchPoint_1->setStyleSheet("QLabel { background-color : red }");
             }
 
             if(compare(this->tacSensor_.calibratedStates_.impedence_[4],this->tacSensor_.sensorStates_.impedence_[4]) &&
@@ -275,36 +275,41 @@ MainWindow::MainWindow(QWidget *parent)
 
             if(compare(this->tacSensor_.calibratedStates_.impedence_[6],this->tacSensor_.sensorStates_.impedence_[6]) &&
                     compare(this->tacSensor_.calibratedStates_.impedence_[7],this->tacSensor_.sensorStates_.impedence_[7]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[12],this->tacSensor_.sensorStates_.impedence_[12]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[13],this->tacSensor_.sensorStates_.impedence_[13]))
+                    compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[15],this->tacSensor_.sensorStates_.impedence_[15]))
             {
                 this->ui->touchPoint_9->setStyleSheet("QLabel { background-color : blue }");
             }
 
             if(compare(this->tacSensor_.calibratedStates_.impedence_[4],this->tacSensor_.sensorStates_.impedence_[4]) &&
                     compare(this->tacSensor_.calibratedStates_.impedence_[5],this->tacSensor_.sensorStates_.impedence_[5]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[12],this->tacSensor_.sensorStates_.impedence_[12]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[13],this->tacSensor_.sensorStates_.impedence_[13]))
+                    compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[15],this->tacSensor_.sensorStates_.impedence_[15]))
             {
                 this->ui->touchPoint_10->setStyleSheet("QLabel { background-color : blue }");
             }
 
-            if(compare(this->tacSensor_.calibratedStates_.impedence_[13],this->tacSensor_.sensorStates_.impedence_[13]) &&
+            if(compare(this->tacSensor_.calibratedStates_.impedence_[2],this->tacSensor_.sensorStates_.impedence_[2]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[3],this->tacSensor_.sensorStates_.impedence_[3]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]) &&
                     compare(this->tacSensor_.calibratedStates_.impedence_[15],this->tacSensor_.sensorStates_.impedence_[15]))
             {
                 this->ui->touchPoint_11->setStyleSheet("QLabel { background-color : blue }");
             }
 
-
-            if(compare(this->tacSensor_.calibratedStates_.impedence_[12],this->tacSensor_.sensorStates_.impedence_[12]))
+            if(compare(this->tacSensor_.calibratedStates_.impedence_[0],this->tacSensor_.sensorStates_.impedence_[0]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[1],this->tacSensor_.sensorStates_.impedence_[1]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[15],this->tacSensor_.sensorStates_.impedence_[15]))
             {
                 this->ui->touchPoint_12->setStyleSheet("QLabel { background-color : blue }");
             }
 
+
             if(compare(this->tacSensor_.calibratedStates_.impedence_[6],this->tacSensor_.sensorStates_.impedence_[6]) &&
                     compare(this->tacSensor_.calibratedStates_.impedence_[7],this->tacSensor_.sensorStates_.impedence_[7]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[15],this->tacSensor_.sensorStates_.impedence_[15]))
+                    compare(this->tacSensor_.calibratedStates_.impedence_[12],this->tacSensor_.sensorStates_.impedence_[12]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[13],this->tacSensor_.sensorStates_.impedence_[13]))
             {
                 this->ui->touchPoint_13->setStyleSheet("QLabel { background-color : blue }");
             }
@@ -312,22 +317,25 @@ MainWindow::MainWindow(QWidget *parent)
 
             if(compare(this->tacSensor_.calibratedStates_.impedence_[4],this->tacSensor_.sensorStates_.impedence_[4]) &&
                     compare(this->tacSensor_.calibratedStates_.impedence_[5],this->tacSensor_.sensorStates_.impedence_[5]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[15],this->tacSensor_.sensorStates_.impedence_[15]))
+                    compare(this->tacSensor_.calibratedStates_.impedence_[12],this->tacSensor_.sensorStates_.impedence_[12]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[13],this->tacSensor_.sensorStates_.impedence_[13]))
             {
                 this->ui->touchPoint_14->setStyleSheet("QLabel { background-color : blue }");
             }
 
 
-            if(compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]))
+            if(compare(this->tacSensor_.calibratedStates_.impedence_[2],this->tacSensor_.sensorStates_.impedence_[2]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[3],this->tacSensor_.sensorStates_.impedence_[3]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[12],this->tacSensor_.sensorStates_.impedence_[12]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[13],this->tacSensor_.sensorStates_.impedence_[13]))
             {
                 this->ui->touchPoint_15->setStyleSheet("QLabel { background-color : blue }");
             }
 
             if(compare(this->tacSensor_.calibratedStates_.impedence_[0],this->tacSensor_.sensorStates_.impedence_[0]) &&
                     compare(this->tacSensor_.calibratedStates_.impedence_[1],this->tacSensor_.sensorStates_.impedence_[1]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[14],this->tacSensor_.sensorStates_.impedence_[14]) &&
-                    compare(this->tacSensor_.calibratedStates_.impedence_[15],this->tacSensor_.sensorStates_.impedence_[15]))
+                    compare(this->tacSensor_.calibratedStates_.impedence_[12],this->tacSensor_.sensorStates_.impedence_[12]) &&
+                    compare(this->tacSensor_.calibratedStates_.impedence_[13],this->tacSensor_.sensorStates_.impedence_[13]))
             {
                 this->ui->touchPoint_16->setStyleSheet("QLabel { background-color : blue }");
             }
